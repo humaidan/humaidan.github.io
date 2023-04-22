@@ -1,8 +1,9 @@
 # Ali Humaidan Personal Website Source
 
-## Profess
+## Short Term Plan:
+- Simple HTML page for presence
+- Accumulate SEO points
 
+## Long Term Plan:
+- Move to WordPress
 
-
-## Extra Readings:
-- https://www.youtube.com/watch?v=0YFrGy_mzjY
