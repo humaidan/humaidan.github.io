@@ -4,37 +4,278 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Humaidan Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <script src="https://kit.fontawesome.com/0345c36c03.js" crossorigin="anonymous"></script>
+    <meta name="keywords" content="Ali Humaidan, personal blog, resume, CV, career">
+    <meta name="description" content="Get to know inside Ali Humaidan's Professional life and personal views!">
+    <title>Ali Humaidan Website | Resume | Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eebb1f7e73.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">RESUME</a></li>
-                <li><a href="#">POSTS</a></li>
-            </ul>
-        </nav>
-        <div class="detel">
-            <h1>I'M Ali <span>Humaidan</span></h1>
-            <p>This is my website to showcase my 
-                my work and professional experience in <br> Airports, Artificial Intellgence and others. </p>
-        </div>
-        <div class="images">
-            <img src="images/shape.png" class="shape">
-            <img src="images/boy.png" class="boy">
-        </div>
 
-        <div class="social">
-           <a href="https://www.linkedin.com/in/alihumaidan/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-           <a href="https://github.com/humaidan/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github-alt"></i></a>
-           <a href="mailto:humaidan@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Ali.png" alt="Ali Humaidan logo" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Airport Systems</p>
+                <h1>Hi, I'm <span>Ali Humaidan</span><br>From Bahrain</h1>
+            </div>
         </div>
     </div>
+
+    <!-- ------------- about section -------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/AliHumaidan3.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <!-- <p>I'm an innovative Information Technology professional with aviation background who aim to provide value to the professionals in the same field.<br>
+                        <br>
+                        With 20 years of experience in Airports IT, I have worked in both technical and supervisotry levels, working in various verticals such as helpdesk support, operating system/database administration, datacenter, IT infrastructure, business solutions, .NET development, and Oracle/IBM solutions to airport mission-critical systems.<br>
+                        <br>
+                        Bahrain Airport is a city on its own where many processes are running behind the scene supported by ICT systems which has its own world. 
+                        <br> -->
+                        Working in a live 24/7 environment that never sleeps and expects high level of professionalism along with dozen of different partners and stakeholders in Bahrain Airport of over 20,000 colleagues working together under one roof.<br>
+                        <!-- <br>
+                        If you're interested in learning more, please feel free to get in touch. -->
+                    </p>
+                    <br><br>
+
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>ICT Strategy</span><br>Helping designing an ICT strategy.</li>
+                            <li><span>Portfolio Mgmt</span><br>Manage and track a set of concurrent projects.</li>
+                            <li><span>IT Budgeting</span><br>Supports plan for budgetary controls.</li>
+                            <li><span>Cyber Security</span><br>Manage and track cyber risks and incidents.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>BAC | Director Airport Systems | 2020+</span><br>Managing a team covering three sections for Airport Flights Systems, Airport Security Systems, and Airport Passengers/Baggage systems.<br>
+                                Working on the overall management, development of Airport Airport Operational Database (AODB), Airport Management System (AMS), Flights Information System (FIDS), Passengers Processing (CUPPS), Passengers Processing Self-Service (CUSS), Passenger pre-immigration egate (iValidate), VideoWall, SMS, Car Park(s) Management Systems (CPMS), CCTV, Security Access Control System (SACS), Airport Pass System.
+                            </li>
+                            <li><span>BAC |  Manager Business Information Solutions | 2012</span><br>Managing Airport systems team, Enterprise Resource Planning team, and development team to support BAC operations.</li>
+                            <li><span>BAC | Head of Infrastructure | 2008</span><br>managed the new datacenter and networking at Head Quarter with servers, storage, licenses, agreements, telephony.</li>
+                            <li><span>ALBA | Senior Technical Support | 2007</span><br>manage and support ALBA’s infrastructure from datacenter, servers hardware, Active Directory administration, database admin, firewall admin, email spams admin, back/restore admin, and as a second level support.</li>
+                            <li><span>MOF | Senior Database Administrator | 2003</span><br>Supporting Ministry Unix, Windows Active Directory, and SQL Databases operational infrastructure</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>MBA</span><br>Masters in Business Administration (MBA)</li>
+                            <li><span>Bsc</span><br>BSc Computer Science</li>
+                            <li><span>ACI AMPAP</span><br>ACI Airport Management Professional Accreditation Programme</li>
+                            <li><span>AWS</span><br>AWS Certified Solutions Architect Associate</li>
+                            <li><span>COBIT</span><br>COBIT 5 - IT governance and management framework</li>
+                            <li><span>MCSE</span><br>Microsoft Certified System Engineer (MCSE) </li>
+                            <li><span>C#</span><br>Microsoft .NET & C# </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- ------------- services section -------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titl">My ORAT Journey [ICT]</h1>
+            <br>
+            <p>My ORAT journey at Bahrain International Airport's new terminal was a testament to the power of collaboration and preparation. 
+                <br><br>The comprehensive testing program helped identify any issues or inefficiencies in the airport's processes and systems, which were then addressed before the terminal's official opening.
+                <br><br>The new terminal has since become a shining example of modern airport design and functionality, and is sure to provide a world-class travel experience for years to come.
+            </p>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>2016</h2>
+                    <p>Initial release of tender for the full ICT Package of the New Terminal for a full state of the art systems that can fully operate the New Terminal.  
+                        <br><br>Main Contractor was a joint venture between Arabtec and TAV under the management of Hill Internationals & design of ADPi in which Thales/SITA joint venture won the ICT Package sub-tender.</p>
+                    
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>2017</h2>
+                    <p>Working extensively with the contractors to review and assist in the High Level Design, Low Level Design, Business Use Cases Documents, Detailed Interface Documents.</p>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>2018</h2>
+                    <p>Fraport ORAT team joined for Operational testing of new facilities and tracking/reporting progress of ICT Package with contractors, airlines, management, and our engineers.</p>
+                </div>
+            </div>            
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>2019</h2>
+                    <p>BAC team is taking the lead in ORAT process.
+                        <br>The new passenger terminal at Bahrain International Airport has successfully completed all preliminary and advanced Operational readiness trials and move to Transition phase.
+                    </p>
+                </div>
+                <div>
+                   
+                    <i class="fab fa-app-store"></i>
+                    <h2>2020</h2>
+                    <p>Soft Opening of New Terminal which marks one of the seamless transfers in history of ORATs from old Terminal to new Terminal.
+                        <br>Spanning 210,000 sqm, the new terminal is four times larger than the existing airport and will increase BIA’s capacity to 14 million passengers a year. It is the largest green building in Bahrain.
+                        <br><br>Highlights of the new terminal include 8 baggage reclaim belts, 104 check-in counters, 2 halls for registration of first and business class passengers, 36 passport control offices, 12 e-gates for Departures, 8 e-gates for Arrivals, 8,520 sqm of the Check-in area, a 4,780 sqm Departures hall, a 6,600 sqm Arrivals hall, 10,002 sqm of retail space, and 3,300 sqm of Duty-Free space for Departures, and 541 sqm for Arrivals. 
+                        <br><br>The Duty-Free Area at the new terminal is three times larger than that of the current airport, offering 30 leading brands in Bahrain for the first time.
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>2021</h2>
+                    <p>In March 2021, the New Terminal was officially opened by King Hamad bin Isa Al Khalifa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- ------------- Portfolio section -------------- -->
+
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Blog</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit facilis consequuntur unde cumque non facere eaque</p>
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                </div>                
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit facilis consequuntur unde cumque non facere eaque</p>
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                </div>                
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit facilis consequuntur unde cumque non facere eaque</p>
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">View More</a>
+        </div>
+        
+    </div> -->
+
+
+    <!-- ------------- Contact section -------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fas fa-paper-plane"></i>humaidan@gmail.com</p>
+                    <p><i class="fa fa-skype"></i>Skype - live:humaidan</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/alihumaidan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/humaidan" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <!-- <a href="./uploads/Ali Humaidan CV 23.pdf" download class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------- Footer section -------------- -->
+    <div id="footer">
+        <div class="copyright">
+            <p>Copyright <i class="far fa-copyright"></i> Ali Humaidan 2023</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzuSw9kcBV4iEn6zvNPyG0b4cujBvU2Otdm_A-pfjrOYlNauC90GG1eD7EQsudWDavvNA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(() => {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+  </script>
+
+    
 </body>
 </html>
